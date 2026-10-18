@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--bg:248 247 243;--sf:255 255 255;--ln:224 222 214;--tx:28 28 32;--mu:108 108 116;--ac:104 72 220;--ok:30 132 88;--bad:196 48 58;--wn:176 118 0}
+.dark{--bg:21 21 23;--sf:31 31 34;--ln:48 48 54;--tx:219 219 222;--mu:138 138 150;--ac:160 134 255;--ok:96 204 144;--bad:255 112 118;--wn:232 177 58}
+body{@apply bg-bg text-tx antialiased}
+*{transition:background-color .4s ease,border-color .4s ease,color .4s ease,box-shadow .4s ease}
+:focus-visible{outline:2px solid rgb(var(--ac));outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
